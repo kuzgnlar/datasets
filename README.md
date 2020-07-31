@@ -12,6 +12,8 @@ Bu bölümde https://huggingface.co/kuzgunlar da bulunan ELECTRA modellerinin fi
   Sahin, H. Bahadir; Eren, Mustafa Tolga; Tirkaz, Caglar; Sonmez, Ozan; Yildiz, Eray (2017), “English/Turkish Wikipedia Named-Entity Recognition and Text Categorization Dataset”, Mendeley Data, v1 http://dx.doi.org/10.17632/cdcztymf4k.1
   
   verisetinin sınıflarının özel olarak 48 sınıfa indirilmesi ile oluşturulmuştur. Daha sonra Electra fine-tune için formatı değiştirilmiştir.
+  
+  Dosya boyutundan dolayı [Kaggle](https://www.kaggle.com/behcetsenturk/shrinked-twnertc-turkish-ner-data-by-kuzgunlar) üzerinden paylaşılmıştır.
 
 ## Question Answer
   Question Answer [modelinin](https://huggingface.co/kuzgunlar/electra-turkish-qa) veriseti.
