@@ -1,29 +1,26 @@
 <img src="header_background.jpg" height ="38%" width="38%"></img> 
 
-# Kuzgunlar Model Verisetleri
+# Kuzgunlar Turkish Datasets
 
 ![GPL 3.0](https://img.shields.io/badge/license-GPLv3-red.svg)
 
-Bu bölümde https://huggingface.co/kuzgunlar da bulunan ELECTRA modellerinin fine-tune edildiği verisetleri bulunmaktadır.
-
 ## NER
-  NER [modelinin](https://huggingface.co/kuzgunlar/electra-turkish-ner) veriseti
+  The dataset of [Kuzgunlar Turkish Electra NER Model](https://huggingface.co/kuzgunlar/electra-turkish-ner)
   
-  Sahin, H. Bahadir; Eren, Mustafa Tolga; Tirkaz, Caglar; Sonmez, Ozan; Yildiz, Eray (2017), “English/Turkish Wikipedia Named-Entity Recognition and Text Categorization Dataset”, Mendeley Data, v1 http://dx.doi.org/10.17632/cdcztymf4k.1
+> Sahin, H. Bahadir; Eren, Mustafa Tolga; Tirkaz, Caglar; Sonmez, Ozan; Yildiz, Eray (2017), “English/Turkish Wikipedia Named-Entity Recognition and Text Categorization Dataset”, Mendeley Data, v1 http://dx.doi.org/10.17632/cdcztymf4k.1
   
-  verisetinin sınıflarının özel olarak 48 sınıfa indirilmesi ile oluşturulmuştur. Daha sonra Electra fine-tune için formatı değiştirilmiştir.
-  
-  Dosya boyutundan dolayı [Kaggle](https://www.kaggle.com/behcetsenturk/shrinked-twnertc-turkish-ner-data-by-kuzgunlar) üzerinden paylaşılmıştır.
+It is created by reducing the classes of the above dataset to 48 classes. It is shared over [Kaggle](https://www.kaggle.com/behcetsenturk/shrinked-twnertc-turkish-ner-data-by-kuzgunlar) due to Github file size restrictions.
 
 ## Question Answer
-  Question Answer [modelinin](https://huggingface.co/kuzgunlar/electra-turkish-qa) veriseti.
+The dataset of [Kuzgunlar Turkish Electra Question-Answer Model](https://huggingface.co/kuzgunlar/electra-turkish-qa).
   
-  Bir başka açık kaynak Türkçe soru-cevap veriseti olan [TQUAD](https://github.com/TQuad/turkish-nlp-qa-dataset) ile birlikte kullanılmak üzere wikipedia içerikleri kullanılarak hazırlandı.
+It is prepared using wikipedia contents to use with [TQUAD](https://github.com/TQuad/turkish-nlp-qa-dataset), which is an open source Turkish question-answer dataset.
 
 
 ## Sentence
-  Masked LM uygulamaları için ~251 GB çevrimiçi Türkçe pdf verilerinin işlenmesiyle oluşturulmuş cümle verisetidir. Dosya boyutundan dolayı [Kaggle](https://www.kaggle.com/rootofarch/kuzgunlar-acikhack-tr-sentence) üzerinden paylaşılmıştır.
-  
-  [TurkishDeasciifier](https://github.com/StarlangSoftware/TurkishDeasciifier) kullanılarak Türkçe karakter hatalı yazılmış kelimeler aslına uygun olarak yeniden düzenlendi.
-  
-  [Zemberek](https://github.com/ahmetaa/zemberek-nlp) kullanılarak cümle içeriğindeki kelimelerin Türkçe oranı %80 ve üzeri olarak tanımlandı. Bu sayede gözden kaçan yabancı pdfler ve yabancı cümle alıntıları olabildiğince engellenilmeye çalışıldı.
+
+It is a sentence dataset created by processing ~251 GB online Turkish pdf data for Masked LM applications. It is shared over [Kaggle](https://www.kaggle.com/rootofarch/kuzgunlar-acikhack-tr-sentence) due to the file size.
+
+ - By using [TurkishDeasciifier](https://github.com/StarlangSoftware/TurkishDeasciifier), Turkish character misspelled words were rearranged in accordance with their original.
+
+ - Using [Zemberek](https://github.com/ahmetaa/zemberek-nlp), the Turkish ratio of words in the sentence content was defined as 80% and above. In this way, overlooked non-Turkish pdfs and sentence quotations in foreign languages were tried to be avoided as much as possible.
